@@ -1,0 +1,67 @@
+<div style="margin-top: 20px"> </div>
+<h1>Create Project</h1>
+<form class="form-horizontal">
+
+    <div class="form-group">
+        <label class="control-label col-xs-3" for="inputPassword">Project Name:</label>
+        <div class="col-xs-9">
+            <input type="text" class="form-control" ng-model="project.projectName" id="inputPassword" placeholder="Password">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-3" for="inputStartDate">Start Date:</label>
+
+        <div class="col-xs-9 date form_datetime">
+            <input size="16" id="inputStartDate" ng-model="project.startDate"  type="text"  readonly>
+            <span class="add-on"><i class="icon-th"></i></span>
+        </div>
+
+
+    </div>
+
+    <div class="form-group">
+    <label class="control-label col-xs-3" for="inputEndDate">End Date:</label>
+    <div class="col-xs-9 date form_datetime">
+        <input size="16" id="inputEndDate" ng-model="project.endDate"  type="text"  readonly>
+        <span class="add-on"><i class="icon-th"></i></span>
+    </div>
+</div>
+
+
+  <!--  <div class="form-group">
+        <label class="control-label col-xs-3">Gender:</label>
+        <div class="col-xs-2">
+            <label class="radio-inline">
+                <input type="radio" name="genderRadios" value="male"> Male
+            </label>
+        </div>
+        <div class="col-xs-2">
+            <label class="radio-inline">
+                <input type="radio" name="genderRadios" value="female"> Female
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-3 col-xs-9">
+            <label class="checkbox-inline">
+                <input type="checkbox" value="news"> Send me latest news and updates.
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-3 col-xs-9">
+            <label class="checkbox-inline">
+                <input type="checkbox" value="agree">  I agree to the <a href="#">Terms and Conditions</a>.
+            </label>
+        </div>
+    </div>
+    <br>-->
+    <div class="form-group">
+        <div class="col-xs-offset-3 col-xs-9">
+            <input type="submit" class="btn btn-primary" ng-click="createProject()" value="Create">
+            <input type="reset" class="btn btn-default" value="Reset">
+        </div>
+    </div>
+
+</form>

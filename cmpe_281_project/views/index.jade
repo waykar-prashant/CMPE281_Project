@@ -1,0 +1,167 @@
+extends layout
+block content
+
+        nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+            div.navbar-header
+                a.navbar-brand(href='#/polls')= title
+
+                <div class="navbar navbar-inverse navbar-fixed-top" id="topnav">
+                <div class="container">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand" href="#">ProjectTracker PRO</div>
+                </div>
+                <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#services">Tracker</a></li>
+                <li><a href="#features">Reports</a></li>
+                <li><a href="#pricing">Administration</a></li>
+                </ul>
+                </div>
+                <!--/.navbar-collapse -->
+                </div>
+                </div>
+
+        div.container
+
+            <br/>
+            <br/>
+            <br/>
+            <section class="slider" id="features">
+            <div class="container">
+            <div class="inner-page">
+            <h2 class="page-headline large text-center">Cloud based Project Management and Tracking.</h2>
+            <p class="text-center">Create, Manage and track projects in collaboration</p>
+            </div>
+            <div class="row inner-page">
+            <div class="col-md-8 col-md-push-4 lazy-container loaded">
+            <!--<img data-original="images/mockup.png" src="images/mockup.png" alt="Looks great on every device"-->
+            <!--class="lazy">-->
+            <h2>Our <strong>Features</strong></h2>
+            <div class="row">
+            <div class="col-md-6">
+            <div class="feature-box">
+            <div class="feature-box-icon">
+            <i class="icon-group"></i>
+            </div>
+            <div class="feature-box-info">
+            <h4 class="shorter">Cloud based 24/7 availability</h4>
+            <p class="tall">Lorem ipsum dolor sit amet, consectetur adip.</p>
+            </div>
+            </div>
+            <div class="feature-box">
+            <div class="feature-box-icon">
+            <i class="icon-file"></i>
+            </div>
+            <div class="feature-box-info">
+            <h4 class="shorter">Create Waterfall, scrum or Kanban models</h4>
+            <p class="tall">Lorem ipsum dolor sit amet, adip.</p>
+            </div>
+            </div>
+            <div class="feature-box">
+            <div class="feature-box-icon">
+            <i class="icon-google-plus"></i>
+            </div>
+            <div class="feature-box-info">
+            <h4 class="shorter">Collaborative</h4>
+            <p class="tall">Lorem ipsum dolor sit amet, consectetur adip.</p>
+            </div>
+            </div>
+            <div class="feature-box">
+            <div class="feature-box-icon">
+            <i class="icon-adjust"></i>
+            </div>
+            <div class="feature-box-info">
+            <h4 class="shorter">Colors</h4>
+            <p class="tall">Detailed Reports and Charting</p>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="feature-box">
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4 col-md-pull-8">
+            <div class="list-group">
+            <a href="#" class="list-group-item active">
+            <h4 class="list-group-item-heading">List group item heading</h4>
+            <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Fusce dapibus,</p>
+            </a>
+            <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">List group item heading</h4>
+            <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+            </p>
+            </a>
+            </div>
+            </div>
+            </div>
+            </div>
+            </section>
+            <section class="pricing" id="pricing">
+            <div class="container">
+            <div class="row">
+            <div class="col-md-12 pricing-intro">
+            <h2 class="page-headline large text-center">Tell your projects awesome story.</h2>
+            <p class="text-center">Tell your projects awesome story. Tell your projects awesome story. Tell your</p>
+            </div>
+            </div>
+            </div>
+            <div class="container">
+            <div class="row pricing-table">
+            <div class="col-md-4">
+            <div class="panel panel-danger">
+            <div class="panel-heading"><h3 class="text-center">EasyWaterFall</h3></div>
+            <div class="panel-body text-center">
+            <p class="lead" style="font-size:40px"><strong>$10 / month</strong></p>
+            </div>
+            <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item"><i class="icon-ok text-danger"></i>Suited for Traditional Waterfall</li>
+            <li class="list-group-item"><i class="icon-ok text-danger"></i> Unlimited projects</li>
+            </ul>
+            <div class="panel-footer">
+            <a class="btn btn-lg btn-block btn-danger" href="/models/Waterfall">Start</a>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="panel panel-info">
+            <div class="panel-heading"><h3 class="text-center">Easy Scrum</h3></div>
+            <div class="panel-body text-center">
+            <p class="lead" style="font-size:40px"><strong>$10 / month</strong></p>
+            </div>
+            <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item"><i class="icon-ok text-danger"></i>Suited for Agile/Scrum based development</li>
+            <li class="list-group-item"><i class="icon-ok text-danger"></i> Unlimited projects</li>
+            </ul>
+            <div class="panel-footer">
+            <a class="btn btn-lg btn-block btn-info" href="/models/Scrum" >Start</a>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="panel panel-success">
+            <div class="panel-heading"><h3 class="text-center">Easy Kanban</h3></div>
+            <div class="panel-body text-center">
+            <p class="lead" style="font-size:40px"><strong>$10 / month</strong></p>
+            </div>
+            <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item"><i class="icon-ok text-danger"></i>Kanban Style Project Management</li>
+            <li class="list-group-item"><i class="icon-ok text-danger"></i> Unlimited projects</li>
+            </ul>
+            <div class="panel-footer">
+            <a class="btn btn-lg btn-block btn-success" href="/models/Kanban" >Start</a>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </section>
+div(ng-view)
+

@@ -1,0 +1,58 @@
+doctype html
+html(lang='en', ng-app='polls')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width',
+        initial-scale=1, user-scalable='no')
+        title= 'Multi tenant Model'
+
+        link(rel='stylesheet', href='/stylesheets/custom.css')
+        link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/stylesheets/datepicker.css')
+        link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css')
+        link(rel='stylesheet', href='/stylesheets/bootstrap-datetimepicker.css')
+        link(rel='stylesheet', href='/stylesheets/ui-grid-unstable.css')
+        script(src='/jslibs/angular.min.js')
+        //script(src='/javascripts/angControllers/app.js')
+        script(src='/javascripts/angControllers/main.js')
+        script(src='/javascripts/angularServices/RESTAPIService.js')
+        script(src='/javascripts/common.js')
+        script(src='/jslibs/jquery.min.js')
+        script(src='/jslibs/ui-grid-unstable.js')
+        script(src='/jslibs/bootstrap-datetimepicker.min.js')
+        script(src='//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js')
+
+        script(src='/jslibs/angular-route.min.js')
+        script(src='/jslibs/ui-bootstrap.min.js')
+        script(src='//code.jquery.com/ui/1.11.2/jquery-ui.js')
+        script(src='http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-touch.js')
+        script(src='http://d3js.org/d3.v3.min.js')
+
+
+        script.
+            $(document).ready(function(){
+
+                $(".form_datetime").datetimepicker({
+                    format: "dd MM yyyy - hh:ii"
+                });
+
+                var active = 0;
+                if (true) // check the condition
+                    active = 2; // tab index is zero based. use -1 for last tab
+                $("#tabs").tabs({
+                    active: active
+                });
+
+                $('#tabs').bind('change', function(e) {
+
+                       //alert("changed");
+                });
+
+            });
+
+
+        body
+            #content
+
+        block content
+
